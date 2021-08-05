@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <h2 class="text-center mb-4">
+            Todo Tracker App
+        </h2>
+        <div class="form-container px-3">
+            <input class="form-control mr-2" type="text" name="" id="todo-input" placeholder="Enter new item to List">
+            <button class="btn btn-primary" onclick="additem()">Add Item</button>
+        </div>
+        <div class="list_container mt-3">
+            <ul id="display_todo">
+                <li class="list-item px-2 py-2 mb-2">
+                    <p class="text-muted mb-0">Create New List item</p>
+                    <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/main.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: slategrey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#seat-indicator {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: snow;
+    padding: 8px;
+    border-radius: 5px;
+    color: black;
+    justify-content: space-between;
+}
+
+#seat-indicator li{
+    display: flex;
+    margin-left: 10px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+#seat-indicator li small{
+    margin-left: 10px;
+}
+.seat{
+    background-color: cornsilk;
+    height: 12px;
+    width: 12px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat.selected{
+    background-color: crimson;
+}
+.seat.occupied{
+    background-color: darkgreen;
+}
+.row .seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.row .seat:nth-of-type(3){
+    margin-right: 10px;
+}
+.row .seat:nth-last-of-type(3){
+    margin-left: 10px;
+}
+
+.screen{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    transform: rotateX(-45deg);
+    box-shadow: rgba(212, 212 , 212, 9.5);
+}
+
+.movies-container{
+    perspective: 1000px;
+}
+
+.row {
+    display: flex;
+}
+
+#movies-select{
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#count{
+    color: black;
+}
+#total{
+    color: black;
+}

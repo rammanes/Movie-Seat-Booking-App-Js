@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    padding: 15px 25px;
+    background-color: #efefef;
+    border-radius: 8px;
+}
+.form-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.form-control{
+    flex:2;
+}
+.btn {
+    flex: 1;
+}
+ul{
+    list-style: none;
+}
+.list-item{
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    align-items: center;
+}
+a{
+    color: red;
+    cursor: pointer;
+    margin-left: auto;
+}

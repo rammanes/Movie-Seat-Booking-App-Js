@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container">
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class="flex-container">
+          <div>
+            <button class="btn btn-primary" onclick="ageFunction()">Click me</button>
+          </div>
+          <div>
+            <button class="btn btn-danger" onclick="resetFunction()">Reset</button>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div id="flex-result">
+
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class="btn btn-success"  id="cat-generator" onclick="generateCat()">Generate Cat</button>
+        <div class="flex-container-2" id="flex-cat-gen">
+        
+        </div>
+      </div>
+      <div class="container">
+        <h2>Challenge 3: Rock Paper Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+          <img id="rock" src="http://img3.wikia.nocookie.net/__cb20120924140327/tinymonsters/images/d/d3/Quest_icon_small_rock_debris@2x.png" alt="" height="200" width="200" onclick="rpsGame(this)" >
+          <img id="paper" src="https://www.pngpix.com/wp-content/uploads/2016/03/Ruled-Grunge-Paper-PNG-Image.png" alt="" height="200" width="200" onclick="rpsGame(this)">
+          <img id="scissors" src="https://clipground.com/images/scissor-clip-art-images-3.jpg" alt="" height="200" width="200" onclick="rpsGame(this)">
+
+        </div>
+      </div>
+      <div class="container">
+        <h2>Challenge 4: Change the Color of All Buttons!</h2>
+        <div class="flex-container-2">
+          <form action="">
+            <select name="backDrop" id="background" onchange="buttonColorChange()">
+              <option value="random">Random</option>
+              <option value="blue">Blue</option>
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="reset">Reset</option>
+            </select>
+          </form>
+          <button class="btn btn-primary">Wee!</button>
+          <button class="btn btn-danger">Yahoo!</button>
+          <button class="btn btn-warning">Google!</button>
+          <button class="btn btn-success">Facebook!</button>
+        </div>
+      </div>
+   <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  </body>
+</html>
